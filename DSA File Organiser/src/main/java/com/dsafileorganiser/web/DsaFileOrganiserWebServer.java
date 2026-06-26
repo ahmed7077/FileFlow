@@ -1,4 +1,4 @@
-package com.dsafileorganiser.web;
+package com.fileflow.web;
 
 import com.sun.net.httpserver.HttpServer;
 
@@ -6,10 +6,10 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Executors;
 
-public final class DsaFileOrganiserWebServer {
+public final class FileFLowWebServer {
     private final int port;
 
-    public DsaFileOrganiserWebServer(int port) {
+    public FileFlowWebServer(int port) {
         this.port = port;
     }
 
