@@ -1,12 +1,12 @@
-package com.dsafileorganiser;
+package com.fileflow;
 
-import com.dsafileorganiser.cli.CommandLineOptions;
-import com.dsafileorganiser.organiser.JavaCodeOrganiser;
-import com.dsafileorganiser.organiser.OrganisationSummary;
-import com.dsafileorganiser.web.DsaFileOrganiserWebServer;
+import com.fileflow.cli.CommandLineOptions;
+import com.fileflow.organiser.JavaCodeOrganiser;
+import com.fileflow.organiser.OrganisationSummary;
+import com.fileflow.web.fileflowWebServer;
 
-public final class DsaFileOrganiserApplication {
-    private DsaFileOrganiserApplication() {
+public final class FileFlowApplication {
+    private FileFlowApplication() {
     }
 
     public static void main(String[] args) {
@@ -41,9 +41,9 @@ public final class DsaFileOrganiserApplication {
 
     private static void startWebServer() {
         try {
-            DsaFileOrganiserWebServer webServer = new DsaFileOrganiserWebServer(8080);
+            FileFlowWebServer webServer = new FileFlowWebServer(8080);
             webServer.start();
-            System.out.println("DSA File Organiser web UI is running.");
+            System.out.println("FileFlow web UI is running.");
             System.out.println("Open http://localhost:8080 in your browser.");
         } catch (Exception exception) {
             System.err.println("Failed to start web server: " + exception.getMessage());
