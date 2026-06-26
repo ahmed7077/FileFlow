@@ -5,7 +5,7 @@ import com.dsafileorganiser.organiser.JavaCodeOrganiser;
 import com.dsafileorganiser.organiser.OrganisationSummary;
 import com.dsafileorganiser.web.DsaFileOrganiserWebServer;
 
-public final class DsaFileOrganiserApplication {
+public class FileFlowApplication {
     private DsaFileOrganiserApplication() {
     }
 
